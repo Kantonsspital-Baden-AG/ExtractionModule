@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "extraction"
+version = "0.1.0"
+description = "A package to extract entities from structured data"
+authors = ["petmarco7 <marco.petrella7@libero.it>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyspark = "^3.5.4"
+asyncio = "^3.4.3"
+nest-asyncio = "^1.6.0"
+langchain = "^0.3.18"
+langchain-core = "^0.3.34"
+jsonschema = "^4.23.0"
+langchain-community = "^0.3.17"
+langchain-ollama = "^0.2.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.1.0"
+ruff = "^0.9.6"
+pytest = "^8.3.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[virtualenvs]
+in-project = true
+prompt = "extraction"
